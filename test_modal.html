@@ -1,0 +1,186 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style type="text/css">
+    .title {
+      width: 314px;
+      height: 34px;
+      opacity: 0.9;
+      font-family: 'Lato', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .content {
+      width: 262px;
+      height: 32px;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .child-content {
+      width: 175px;
+      height: 32px;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .margin-bettwen-row{
+      margin: 26px 0px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="card" style="width: 90rem;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <span class="title">Step 1 : Create Campaign</span>
+      </li>
+      <li class="list-group-item">
+         <span class="content">Campaign</span>
+
+          <hr style="margin-top: 5px; margin-bottom: 25px;">  
+
+          <div class="row margin-bettwen-row" >
+            <div class="col-md-3">
+              <span class="child-content">Campaign Name</span>
+            </div>
+            <div class="col-md-8">
+              <input type="text" style="padding: 15px;" class="form-control form-control-sm" >
+            </div>
+          </div>
+
+          <div class="row margin-bettwen-row">
+            <div class="col-md-3">
+              <span class="child-content">Campaign Objective</span>
+            </div>
+            <div class="col-md-8">
+              <select class="form-control form-control-sm" name="" id="">
+                <option value="">Brand Awarness</option>
+              </select>
+            </div>
+          </div>
+
+          <span class="content" >Ad Account</span>
+
+          <hr style="margin-top: 5px; margin-bottom: 25px;">  
+
+          <div class="row margin-bettwen-row" >
+            <div class="col-md-3">
+              <span class="child-content">Ad Group Name</span>
+            </div>
+            <div class="col-md-8">
+              <input type="text" style="padding: 15px;" class="form-control form-control-sm" >
+            </div>
+          </div>
+
+          <div class="row margin-bettwen-row" >
+            <div class="col-md-3">
+              <span class="child-content"></span>
+            </div>
+            <div class="col-md-4">
+              <!-- <input type="text" class="form-control form-control-sm" > -->
+                <div id="datetimepicker" class="input-append date">
+                  <input type="text" placeholder="Specify Time" style="padding: 15px;"></input>
+                  <span class="add-on" style="height: 32px; background: white;">
+                    <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                  </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- <input type="text" class="form-control form-control-sm" > -->
+                  <div id="datetimepicker2" class="input-append date">
+                    <input type="text" placeholder="Specify Time" style="padding: 15px;"></input>
+                    <span class="add-on" style="height: 32px; background: white;">
+                      <i  data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                    </span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row margin-bettwen-row" >
+            <div class="col-md-3">
+              <span class="child-content">Set a total group budget (Optional)</span>
+            </div>
+            <div class="col-md-8">
+              <input type="text" style="padding: 15px;" class="form-control form-control-sm" >
+            </div>
+          </div>
+
+          <div class="row margin-bettwen-row">
+            <div class="col-md-3">
+              <span class="child-content">Bid Type</span>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control form-control-sm" name="" id="">
+                <option value="">Bid type</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row margin-bettwen-row">
+              <div class="col-md-3">
+                <span class="child-content">Optimization Preference</span>
+              </div>
+              <div class="col-md-6">
+                <select class="form-control form-control-sm" name="" id="">
+                  <option value="">Maximum</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row margin-bettwen-row">
+              <button type="button" class="btn btn-primary pull-right">Next</button>
+            </div>
+
+      </li>
+    </ul>
+  </div>
+   
+</body>
+</html>
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"> </script>
+<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js"> </script>
+  <script type="text/javascript">
+    $('#datetimepicker').datetimepicker({
+      format: 'dd/MM/yyyy hh:mm:ss',
+      language: 'pt-BR'
+    });
+
+    $('#datetimepicker2').datetimepicker({
+      format: 'dd/MM/yyyy hh:mm:ss',
+      language: 'pt-BR'
+    });
+  </script>
